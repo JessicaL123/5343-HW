@@ -295,7 +295,7 @@ public boolean isMirror(BinaryNode<AnyType> n1, BinaryNode<AnyType> n2 ) {
 	}
 	return (n1.element==n2.element) && isMirror(n1.left,n2.right)&& isMirror(n1.right,n2.left);
 }
-//h) rotateRight a little similar to remove
+//h1) rotateRight a little similar to remove
 public BinaryNode<AnyType> rotateRight(BinaryNode<AnyType> n){
     if( isEmpty( ) )
         throw new UnderflowException( );
@@ -305,7 +305,7 @@ public BinaryNode<AnyType> rotateRight(BinaryNode<AnyType> n){
 	return left;
 }
 
-//g) rotateLeft 
+//h2) rotateLeft 
 public BinaryNode<AnyType> rotateLeft(BinaryNode<AnyType> n){
     if( isEmpty( ) )
         throw new UnderflowException( );
